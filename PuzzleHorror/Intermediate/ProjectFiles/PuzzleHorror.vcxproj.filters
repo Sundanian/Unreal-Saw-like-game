@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\PuzzleHorror.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{288A49B0-6FAA-4BCB-81BE-D97F1AE8A3AE}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\PuzzleHorror.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\PuzzleHorrorEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{1EA3321D-B37D-4C76-A028-023892DFB3EC}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\PuzzleHorror">
+			<UniqueIdentifier>{EFD8E97F-C400-4C7D-9AA2-5CA62BF00337}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\PuzzleHorror\PuzzleHorror.Build.cs">
+			<Filter>Source\PuzzleHorror</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\PuzzleHorror\PuzzleHorror.cpp">
+			<Filter>Source\PuzzleHorror</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\PuzzleHorror\PuzzleHorror.h">
+			<Filter>Source\PuzzleHorror</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\PuzzleHorror\PuzzleHorrorGameMode.cpp">
+			<Filter>Source\PuzzleHorror</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\PuzzleHorror\PuzzleHorrorGameMode.h">
+			<Filter>Source\PuzzleHorror</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
