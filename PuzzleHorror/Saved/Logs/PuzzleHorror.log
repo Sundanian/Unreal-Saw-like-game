@@ -323,4 +323,609 @@ LogInit: Object subsystem initialized
 [2016.04.11-11.48.29:987][544]LogMaterial: Missing cached shader map for material Hinges, compiling. 
 [2016.04.11-11.48.29:995][544]LogLinker:Warning: Can't find file '/Game/Probs/Outlines'
 [2016.04.11-11.48.29:995][544]LogLinker:Warning: Can't find file '/Game/Probs/Outlines'
-[2016.04.11-11.48.29:999][544]LogMaterial: Missing cache
+[2016.04.11-11.48.29:999][544]LogMaterial: Missing cached shader map for material Outlines, compiling. 
+[2016.04.11-11.48.30:007][544]LogLinker:Warning: Can't find file '/Game/Probs/DoorHandle'
+[2016.04.11-11.48.30:007][544]LogLinker:Warning: Can't find file '/Game/Probs/DoorHandle'
+[2016.04.11-11.48.30:011][544]LogMaterial: Missing cached shader map for material DoorHandle, compiling. 
+[2016.04.11-11.48.30:020][544]LogFbx:Warning: Triangulating static mesh Door
+[2016.04.11-11.48.30:331][544]LogStaticMesh: Building static mesh door1...
+[2016.04.11-11.48.30:405][544]LogStaticMesh: Built static mesh [0.07s] /Game/Probs/door1.door1
+[2016.04.11-11.48.30:420][544]LogStaticMesh:Warning: door1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2016.04.11-11.48.30:435][544]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.04.11-11.48.30:435][544]FBXImport:Warning: Warning door1 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2016.04.11-11.48.39:971][544]LogAssetTools:Warning: Failed to delete '/Game/Probs/doorWood'. The asset is referenced by other content.
+[2016.04.11-11.48.59:629][629]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (door2)
+[2016.04.11-11.49.01:959][766]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_West)
+[2016.04.11-11.49.01:985][766]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2016.04.11-11.49.03:001][825]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (door1)
+[2016.04.11-11.49.50:075][320]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WorldMap" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Maps/WorldMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.04.11-11.49.50:155][320]LogSavePackage: Save=65.07ms
+[2016.04.11-11.49.50:155][320]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/WorldMap2EA7F9154206A8534F67B1A34BC0CC88.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Maps/WorldMap.umap'
+[2016.04.11-11.49.50:158][320]LogSavePackage: Total save time: 74.73ms
+[2016.04.11-11.49.50:158][320]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Maps/WorldMap.umap
+[2016.04.11-11.50.34:234][174]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.11-11.50.34:234][174]PIE: New page: PIE session: WorldMap (Apr 11, 2016, 2:50:34 PM)
+[2016.04.11-11.50.34:234][174]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WorldMap
+[2016.04.11-11.50.34:240][174]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005670s)
+[2016.04.11-11.50.34:241][174]LogAIModule: Creating AISystem for world WorldMap
+[2016.04.11-11.50.34:241][174]LogPlayLevel: PIE: World Init took: (0.000608s)
+[2016.04.11-11.50.34:241][174]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WorldMap.WorldMap to /Game/Maps/UEDPIE_0_WorldMap.WorldMap (0.006481s)
+[2016.04.11-11.50.34:257][174]LogInit: XAudio2 using 'Speakers (PDP Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.11-11.50.34:267][174]LogInit: FAudioDevice initialized.
+[2016.04.11-11.50.34:320][174]LogWorld: Game class is 'BP_GameMode_C'
+[2016.04.11-11.50.34:327][174]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WorldMap.WorldMap up for play (max tick rate 60) at 2016.04.11-13.50.34
+[2016.04.11-11.50.34:328][174]LogWorld: Bringing up level for play took: 0.006361
+[2016.04.11-11.50.34:333][174]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0013 seconds. Added 9 classes and 0 folders.
+[2016.04.11-11.50.34:335][174]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_WorldMap 0.548
+[2016.04.11-11.50.43:048][689]MapCheck: New page: Map Check
+[2016.04.11-11.50.43:065][689]Cmd: MAP REBUILD ALLVISIBLE
+[2016.04.11-11.50.43:065][689]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2016.04.11-11.50.43:084][689]LightingResults: New page: Lighting Build - Apr 11, 2016, 2:50:43 PM
+[2016.04.11-11.50.43:132][689]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.04.11-11.50.43:366][689]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.04.11-11.50.43:377][689]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.04.11-11.50.44:013][689]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.04.11-11.50.44:013][689]LogSwarmInterface: [TryOpenConnection] Local Process ID is 8380
+[2016.04.11-11.50.47:999][689]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2016.04.11-11.50.48:000][689]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.04.11-11.50.48:000][689]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.04.11-11.50.48:000][689]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.04.11-11.50.48:000][689]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.04.11-11.50.48:000][689]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.04.11-11.50.48:212][689]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2016.04.11-11.50.48:212][689]MapCheck: New page: WorldMap - Apr 11, 2016, 2:50:48 PM
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall10 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall10 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall11 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall11 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall12 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall12 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall13 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall13 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall14 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall14 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall15 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall15 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall16 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall16 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall17 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall17 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall18 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall18 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall19 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall19 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall2 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall2 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall21 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall21 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall22 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall22 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall23 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall23 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall24 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall24 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall25 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall25 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall26 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall26 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall27 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall27 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall28 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall28 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall29 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:213][689]MapCheck:Warning: Warning Wall29 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:213][689]MapCheck:Error: Error Wall30 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall30 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall31 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall31 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall32 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall32 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall33 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall33 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall34 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall34 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall35 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall35 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall36 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall36 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall37 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall37 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall38 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall38 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall39 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall39 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall4 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall4 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall40 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall40 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall41 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall41 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall42 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall42 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall43_59 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall43_59 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall44 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall44 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall45 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall45 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall46 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall46 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall47 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall47 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall48 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall48 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall49 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall49 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall5 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall5 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:214][689]MapCheck:Error: Error Wall6 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:214][689]MapCheck:Warning: Warning Wall6 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:215][689]MapCheck:Error: Error Wall7 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:215][689]MapCheck:Warning: Warning Wall7 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:215][689]MapCheck:Error: Error Wall8 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:215][689]MapCheck:Warning: Warning Wall8 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:215][689]MapCheck:Error: Error Wall9 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:215][689]MapCheck:Warning: Warning Wall9 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:215][689]MapCheck:Error: Error Wall_East Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:215][689]MapCheck:Warning: Warning Wall_East Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:215][689]MapCheck:Error: Error Wall_North Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:215][689]MapCheck:Warning: Warning Wall_North Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:215][689]MapCheck:Error: Error Wall_West Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.48:215][689]MapCheck:Warning: Warning Wall_West Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.48:215][689]MapCheck:Error: Error WorldSettings_1 Maps need lighting rebuilt 
+[2016.04.11-11.50.48:298][689]MapCheck: Info Map check complete: 51 Error(s), 50 Warning(s), took 85.625ms to complete.
+[2016.04.11-11.50.48:318][689]LogEditorBuildUtils: Build time 0:00:05
+[2016.04.11-11.50.48:344][689]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2016.04.11-11.50.48:350][689]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2016.04.11-11.50.48:398][690]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer doorWood, compiling. 
+[2016.04.11-11.50.48:403][690]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer doorWood, compiling. 
+[2016.04.11-11.50.48:549][691]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Hinges, compiling. 
+[2016.04.11-11.50.48:558][691]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Hinges, compiling. 
+[2016.04.11-11.50.48:666][692]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Outlines, compiling. 
+[2016.04.11-11.50.48:674][692]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Outlines, compiling. 
+[2016.04.11-11.50.48:782][693]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer DoorHandle, compiling. 
+[2016.04.11-11.50.48:791][693]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer DoorHandle, compiling. 
+[2016.04.11-11.50.57:030][909]Job is a success!
+[2016.04.11-11.50.57:155][910]LogMaterial:Warning: Material /Game/Probs/doorWood.doorWood needed to have new flag set bUsedWithStaticLighting !
+[2016.04.11-11.50.57:158][910]LogMaterial: Missing cached shader map for material doorWood, compiling. 
+[2016.04.11-11.50.57:176][910]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.11-11.50.57:176][910]LogMaterial:Warning: Material /Game/Probs/Hinges.Hinges needed to have new flag set bUsedWithStaticLighting !
+[2016.04.11-11.50.57:178][910]LogMaterial: Missing cached shader map for material Hinges, compiling. 
+[2016.04.11-11.50.57:192][910]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.11-11.50.57:192][910]LogMaterial:Warning: Material /Game/Probs/Outlines.Outlines needed to have new flag set bUsedWithStaticLighting !
+[2016.04.11-11.50.57:194][910]LogMaterial: Missing cached shader map for material Outlines, compiling. 
+[2016.04.11-11.50.57:211][910]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.11-11.50.57:211][910]LogMaterial:Warning: Material /Game/Probs/DoorHandle.DoorHandle needed to have new flag set bUsedWithStaticLighting !
+[2016.04.11-11.50.57:214][910]LogMaterial: Missing cached shader map for material DoorHandle, compiling. 
+[2016.04.11-11.50.57:231][910]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.11-11.50.57:974][910]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2016.04.11-11.50.57:974][910]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2016.04.11-11.50.57:974][910]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
+[2016.04.11-11.50.57:974][910]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2016.04.11-11.50.58:266][910]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8)
+[2016.04.11-11.50.58:266][910]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8)
+[2016.04.11-11.50.58:308][910]Lightmass on SKINKE-PC: 5.52 sec total, 163 ms importing, 149 ms setup, 847 ms photons, 4.26 sec processing, 0 ms extra exporting [79/79 mappings]. Threads: 29.7 sec total, 17.1 sec processing.
+[2016.04.11-11.50.58:340][910]LogStaticLightingSystem: Illumination: 15.2 sec (738 ms encoding lightmaps, 284 ms encoding shadowmaps)
+[2016.04.11-11.50.58:341][910]LogStaticLightingSystem: Lightmap texture memory:  2.0 MB (2.0 MB streaming, 0.0 MB non-streaming), 4 textures
+[2016.04.11-11.50.58:341][910]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.04.11-11.50.59:023][911]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.04.11-11.50.59:024][911]MapCheck: New page: WorldMap - Apr 11, 2016, 2:50:59 PM
+[2016.04.11-11.50.59:025][911]MapCheck:Error: Error Wall Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:025][911]MapCheck:Warning: Warning Wall Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:025][911]MapCheck:Error: Error Wall10 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:025][911]MapCheck:Warning: Warning Wall10 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:025][911]MapCheck:Error: Error Wall11 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:025][911]MapCheck:Warning: Warning Wall11 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:025][911]MapCheck:Error: Error Wall12 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:025][911]MapCheck:Warning: Warning Wall12 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:025][911]MapCheck:Error: Error Wall13 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:025][911]MapCheck:Warning: Warning Wall13 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:025][911]MapCheck:Error: Error Wall14 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:025][911]MapCheck:Warning: Warning Wall14 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall15 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:026][911]MapCheck:Warning: Warning Wall15 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall16 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:026][911]MapCheck:Warning: Warning Wall16 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall17 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:026][911]MapCheck:Warning: Warning Wall17 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall18 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:026][911]MapCheck:Warning: Warning Wall18 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall19 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:026][911]MapCheck:Warning: Warning Wall19 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall2 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:026][911]MapCheck:Warning: Warning Wall2 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall21 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:026][911]MapCheck:Warning: Warning Wall21 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:026][911]MapCheck:Error: Error Wall22 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall22 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:027][911]MapCheck:Error: Error Wall23 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall23 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:027][911]MapCheck:Error: Error Wall24 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall24 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:027][911]MapCheck:Error: Error Wall25 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall25 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:027][911]MapCheck:Error: Error Wall26 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall26 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:027][911]MapCheck:Error: Error Wall27 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall27 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:027][911]MapCheck:Error: Error Wall28 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall28 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:027][911]MapCheck:Error: Error Wall29 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:027][911]MapCheck:Warning: Warning Wall29 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:028][911]MapCheck:Error: Error Wall30 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:028][911]MapCheck:Warning: Warning Wall30 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:028][911]MapCheck:Error: Error Wall31 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:028][911]MapCheck:Warning: Warning Wall31 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:028][911]MapCheck:Error: Error Wall32 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:028][911]MapCheck:Warning: Warning Wall32 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:028][911]MapCheck:Error: Error Wall33 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:028][911]MapCheck:Warning: Warning Wall33 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:028][911]MapCheck:Error: Error Wall34 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:028][911]MapCheck:Warning: Warning Wall34 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:028][911]MapCheck:Error: Error Wall35 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:028][911]MapCheck:Warning: Warning Wall35 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:028][911]MapCheck:Error: Error Wall36 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall36 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall37 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall37 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall38 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall38 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall39 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall39 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall4 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall4 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall40 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall40 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall41 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall41 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall42 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:029][911]MapCheck:Warning: Warning Wall42 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:029][911]MapCheck:Error: Error Wall43_59 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:030][911]MapCheck:Warning: Warning Wall43_59 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:030][911]MapCheck:Error: Error Wall44 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:030][911]MapCheck:Warning: Warning Wall44 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:030][911]MapCheck:Error: Error Wall45 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:030][911]MapCheck:Warning: Warning Wall45 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:030][911]MapCheck:Error: Error Wall46 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:030][911]MapCheck:Warning: Warning Wall46 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:030][911]MapCheck:Error: Error Wall47 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:030][911]MapCheck:Warning: Warning Wall47 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:030][911]MapCheck:Error: Error Wall48 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:030][911]MapCheck:Warning: Warning Wall48 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:030][911]MapCheck:Error: Error Wall49 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:030][911]MapCheck:Warning: Warning Wall49 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:031][911]MapCheck:Error: Error Wall5 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:031][911]MapCheck:Warning: Warning Wall5 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:031][911]MapCheck:Error: Error Wall6 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:031][911]MapCheck:Warning: Warning Wall6 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:031][911]MapCheck:Error: Error Wall7 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:031][911]MapCheck:Warning: Warning Wall7 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:031][911]MapCheck:Error: Error Wall8 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:031][911]MapCheck:Warning: Warning Wall8 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:031][911]MapCheck:Error: Error Wall9 Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:031][911]MapCheck:Warning: Warning Wall9 Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:031][911]MapCheck:Error: Error Wall_East Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:031][911]MapCheck:Warning: Warning Wall_East Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:031][911]MapCheck:Error: Error Wall_North Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:031][911]MapCheck:Warning: Warning Wall_North Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:032][911]MapCheck:Error: Error Wall_West Component is a static type but has invalid lightmap settings!  Indirect lighting will be black.  Common causes are lightmap resolution of 0, LightmapCoordinateIndex out of bounds. 
+[2016.04.11-11.50.59:032][911]MapCheck:Warning: Warning Wall_West Static mesh actor has NULL StaticMesh property 
+[2016.04.11-11.50.59:145][911]MapCheck: Info Map check complete: 50 Error(s), 50 Warning(s), took 121.565ms to complete.
+[2016.04.11-11.51.21:356][125]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (door3)
+[2016.04.11-11.51.21:379][125]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (door3)
+[2016.04.11-11.56.04:345][299]LogTexture:Display: Building textures: SimplygonLogo (AutoDXT)
+[2016.04.11-11.56.04:546][301]LogRenderer: Reallocating scene render targets to support 1156x712 (Frame:26547).
+[2016.04.11-12.00.00:577][736]LogActorComponent: UnregisterComponent: (/Engine/Transient.MovementComponent0) Not registered. Aborting.
+[2016.04.11-12.00.00:577][736]LogActorComponent: UnregisterComponent: (/Engine/Transient.PhysicsHandle_GEN_VARIABLE) Not registered. Aborting.
+[2016.04.11-12.00.00:577][736]LogActorComponent: UnregisterComponent: (/Engine/Transient.ActionController_GEN_VARIABLE) Not registered. Aborting.
+[2016.04.11-12.00.00:589][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WorldMap" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Maps/WorldMap_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.04.11-12.00.00:656][736]LogSavePackage: Save=61.28ms
+[2016.04.11-12.00.00:656][736]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/WorldMap_Auto1AABE180749CE288EC293CE92C86D5D4A.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Maps/WorldMap_Auto1.umap'
+[2016.04.11-12.00.00:657][736]LogSavePackage: Total save time: 66.47ms
+[2016.04.11-12.00.00:657][736]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Maps/WorldMap_Auto1.umap
+[2016.04.11-12.00.00:658][736]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WorldMap' took 0.082
+[2016.04.11-12.00.00:658][736]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.082
+[2016.04.11-12.00.00:663][736]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Probs/door1] ([1] browsable assets)...
+[2016.04.11-12.00.00:705][736]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Probs/door1.door1]
+[2016.04.11-12.00.00:705][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/Probs/door1]
+[2016.04.11-12.00.00:705][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/door1" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/door1_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.04.11-12.00.00:720][736]LogSavePackage: Save=13.13ms
+[2016.04.11-12.00.00:720][736]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/door1_Auto1669469574C63906B07ECEEAD7A5F9FE1.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/door1_Auto1.uasset'
+[2016.04.11-12.00.00:720][736]LogSavePackage: Total save time: 14.04ms
+[2016.04.11-12.00.00:720][736]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/door1_Auto1.uasset
+[2016.04.11-12.00.00:722][736]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Probs/doorWood] ([1] browsable assets)...
+[2016.04.11-12.00.00:764][736]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Probs/doorWood.doorWood]
+[2016.04.11-12.00.00:764][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/Probs/doorWood]
+[2016.04.11-12.00.00:764][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/doorWood" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/doorWood_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.04.11-12.00.00:779][736]LogSavePackage: Save=13.55ms
+[2016.04.11-12.00.00:779][736]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/doorWood_Auto1811AF89D467E47F490135D9F5583895A.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/doorWood_Auto1.uasset'
+[2016.04.11-12.00.00:780][736]LogSavePackage: Total save time: 14.56ms
+[2016.04.11-12.00.00:780][736]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/doorWood_Auto1.uasset
+[2016.04.11-12.00.00:782][736]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Probs/doorWood2] ([1] browsable assets)...
+[2016.04.11-12.00.00:791][736]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Probs/doorWood2.doorWood2]
+[2016.04.11-12.00.00:791][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/Probs/doorWood2]
+[2016.04.11-12.00.00:791][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/doorWood2" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/doorWood2_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.04.11-12.00.00:804][736]LogSavePackage: Save=10.91ms
+[2016.04.11-12.00.00:804][736]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/doorWood2_Auto15CC95EFE47398DDCBB39AC916372491C.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/doorWood2_Auto1.uasset'
+[2016.04.11-12.00.00:805][736]LogSavePackage: Total save time: 11.99ms
+[2016.04.11-12.00.00:805][736]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/doorWood2_Auto1.uasset
+[2016.04.11-12.00.00:806][736]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Probs/Hinges] ([1] browsable assets)...
+[2016.04.11-12.00.00:848][736]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Probs/Hinges.Hinges]
+[2016.04.11-12.00.00:848][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/Probs/Hinges]
+[2016.04.11-12.00.00:848][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/Hinges" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/Hinges_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.04.11-12.00.00:865][736]LogSavePackage: Save=15.31ms
+[2016.04.11-12.00.00:865][736]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Hinges_Auto1A468E7844A1FDF1CF7BBFF8C1E7997BB.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/Hinges_Auto1.uasset'
+[2016.04.11-12.00.00:865][736]LogSavePackage: Total save time: 16.33ms
+[2016.04.11-12.00.00:865][736]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/Hinges_Auto1.uasset
+[2016.04.11-12.00.00:867][736]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Probs/Outlines] ([1] browsable assets)...
+[2016.04.11-12.00.00:911][736]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Probs/Outlines.Outlines]
+[2016.04.11-12.00.00:911][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/Probs/Outlines]
+[2016.04.11-12.00.00:911][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/Outlines" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/Outlines_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.04.11-12.00.00:925][736]LogSavePackage: Save=12.89ms
+[2016.04.11-12.00.00:925][736]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Outlines_Auto19DF9E5FA476C68BB29F28883119DF874.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/Outlines_Auto1.uasset'
+[2016.04.11-12.00.00:926][736]LogSavePackage: Total save time: 13.93ms
+[2016.04.11-12.00.00:926][736]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/Outlines_Auto1.uasset
+[2016.04.11-12.00.00:928][736]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Probs/DoorHandle] ([1] browsable assets)...
+[2016.04.11-12.00.00:969][736]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Probs/DoorHandle.DoorHandle]
+[2016.04.11-12.00.00:969][736]OBJ SavePackage: Finished generating thumbnails for package [/Game/Probs/DoorHandle]
+[2016.04.11-12.00.00:969][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/DoorHandle" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/DoorHandle_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.04.11-12.00.00:985][736]LogSavePackage: Save=14.23ms
+[2016.04.11-12.00.00:985][736]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/DoorHandle_Auto135D0BA31498522AE785EE48AF1E8D539.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/DoorHandle_Auto1.uasset'
+[2016.04.11-12.00.00:986][736]LogSavePackage: Total save time: 15.45ms
+[2016.04.11-12.00.00:986][736]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Saved/Autosaves/Game/Probs/DoorHandle_Auto1.uasset
+[2016.04.11-12.00.00:986][736]LogFileHelpers: Auto-saving content packages took 0.324
+[2016.04.11-12.20.29:066][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WorldMap" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Maps/WorldMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.04.11-12.20.29:238][873]LogSavePackage: Save=157.64ms
+[2016.04.11-12.20.29:238][873]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/WorldMapBDE2945645552EFC01BF15A49CE48B7C.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Maps/WorldMap.umap'
+[2016.04.11-12.20.29:243][873]LogSavePackage: Total save time: 166.83ms
+[2016.04.11-12.20.29:243][873]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Maps/WorldMap.umap
+[2016.04.11-12.20.29:268][873]LogFileHelpers: Saving map 'WorldMap' took 0.284
+[2016.04.11-12.20.29:315][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/door1" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/door1.uasset" SILENT=true
+[2016.04.11-12.20.29:330][873]LogSavePackage: Save=13.11ms
+[2016.04.11-12.20.29:330][873]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/door18544061843500CB51E6C7C8A20782972.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/door1.uasset'
+[2016.04.11-12.20.29:335][873]LogSavePackage: Total save time: 17.85ms
+[2016.04.11-12.20.29:335][873]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/door1.uasset
+[2016.04.11-12.20.29:386][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/DoorHandle" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/DoorHandle.uasset" SILENT=true
+[2016.04.11-12.20.29:401][873]LogSavePackage: Save=13.52ms
+[2016.04.11-12.20.29:401][873]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/DoorHandleAF7A0D9F4EBCCFC51FEB92AA6D715703.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/DoorHandle.uasset'
+[2016.04.11-12.20.29:406][873]LogSavePackage: Total save time: 18.59ms
+[2016.04.11-12.20.29:406][873]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/DoorHandle.uasset
+[2016.04.11-12.20.29:455][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/doorWood" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/doorWood.uasset" SILENT=true
+[2016.04.11-12.20.29:470][873]LogSavePackage: Save=13.70ms
+[2016.04.11-12.20.29:470][873]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/doorWood75B1563642BE9DF82B3EC4A9CD27A191.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/doorWood.uasset'
+[2016.04.11-12.20.29:474][873]LogSavePackage: Total save time: 17.87ms
+[2016.04.11-12.20.29:474][873]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/doorWood.uasset
+[2016.04.11-12.20.29:488][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/doorWood2" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/doorWood2.uasset" SILENT=true
+[2016.04.11-12.20.29:629][873]LogSavePackage: Save=138.77ms
+[2016.04.11-12.20.29:629][873]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/doorWood26517CF6948F9C8B26055C0878E7A3C81.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/doorWood2.uasset'
+[2016.04.11-12.20.29:632][873]LogSavePackage: Total save time: 142.34ms
+[2016.04.11-12.20.29:632][873]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/doorWood2.uasset
+[2016.04.11-12.20.29:680][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/Hinges" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/Hinges.uasset" SILENT=true
+[2016.04.11-12.20.29:696][873]LogSavePackage: Save=14.64ms
+[2016.04.11-12.20.29:696][873]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Hinges01C6EB714135E9F039FAB0AD4CAB1B3C.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/Hinges.uasset'
+[2016.04.11-12.20.29:700][873]LogSavePackage: Total save time: 18.62ms
+[2016.04.11-12.20.29:700][873]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/Hinges.uasset
+[2016.04.11-12.20.29:754][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Probs/Outlines" FILE="../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/Outlines.uasset" SILENT=true
+[2016.04.11-12.20.29:769][873]LogSavePackage: Save=12.72ms
+[2016.04.11-12.20.29:769][873]LogSavePackage: Moving '../../../../PuzzelPuzzel/PuzzleHorror/Saved/Outlines454EC1BC47E295C1CBD776B6C84E3FBD.tmp' to '../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/Outlines.uasset'
+[2016.04.11-12.20.29:772][873]LogSavePackage: Total save time: 16.51ms
+[2016.04.11-12.20.29:772][873]LogSavePackage:Display: Finished SavePackage ../../../../PuzzelPuzzel/PuzzleHorror/Content/Probs/Outlines.uasset
+[2016.04.11-12.20.30:024][874]Cmd: QUIT_EDITOR
+[2016.04.11-12.20.30:110][874]LogExit: Preparing to exit.
+[2016.04.11-12.20.30:623][874]LogExit: Editor shut down
+[2016.04.11-12.20.30:623][874]LogExit: Transaction tracking system shut down
+[2016.04.11-12.20.30:723][874]LogObj: Freed 0b from 0 cluster array pools.
+[2016.04.11-12.20.30:723][874]LogExit: Object subsystem successfully closed.
+[2016.04.11-12.20.30:738][874]LogD3D11RHI: Shutdown
+[2016.04.11-12.20.30:738][874]LogD3D11RHI: CleanupD3DDevice
+[2016.04.11-12.20.30:785][874]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.04.11-12.20.30:810][874]LogDerivedDataCache: Shutdown
+[2016.04.11-12.20.30:810][874]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (206)
+[2016.04.11-12.20.30:810][874]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (205)
+[2016.04.11-12.20.30:810][874]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (204)
+[2016.04.11-12.20.30:810][874]LogModuleManager: Shutting down and abandoning module CrashTracker (203)
+[2016.04.11-12.20.30:810][874]LogModuleManager: Shutting down and abandoning module SuperSearch (202)
+[2016.04.11-12.20.30:810][874]LogModuleManager: Shutting down and abandoning module WidgetCarousel (201)
+[2016.04.11-12.20.30:810][874]LogModuleManager: Shutting down and abandoning module AddContentDialog (200)
+[2016.04.11-12.20.30:811][874]LogModuleManager: Shutting down and abandoning module GameplayTags (199)
+[2016.04.11-12.20.30:811][874]LogModuleManager: Shutting down and abandoning module EditorWidgets (198)
+[2016.04.11-12.20.30:811][874]LogModuleManager: Shutting down and abandoning module CollectionManager (197)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module SceneOutliner (196)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module StatsViewer (195)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module FoliageEdit (194)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module LandscapeEditor (193)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module ActorPickerMode (192)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module GeometryMode (191)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module TextureAlignMode (190)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module BspMode (189)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module PlacementMode (188)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module AutomationWorker (187)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module CharacterAI (186)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module SmartSnapping (185)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module ViewportSnapping (184)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module LogVisualizer (183)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (182)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module IntroTutorials (181)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (180)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (179)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (178)
+[2016.04.11-12.20.30:812][874]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (177)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (176)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (175)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (174)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module MergeActors (173)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module SizeMap (172)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module TreeMap (171)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module ReferenceViewer (170)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module LocalizationService (169)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (168)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module HardwareTargeting (167)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (166)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module UndoHistory (165)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module UserFeedback (164)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module XmlParser (163)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module Blutility (162)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (161)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (160)
+[2016.04.11-12.20.31:636][874]LogModuleManager: Shutting down and abandoning module InputBindingEditor (159)
+[2016.04.11-12.20.31:637][874]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (158)
+[2016.04.11-12.20.31:637][874]LogModuleManager: Shutting down and abandoning module SettingsEditor (157)
+[2016.04.11-12.20.31:637][874]LogModuleManager: Shutting down and abandoning module ProjectLauncher (156)
+[2016.04.11-12.20.31:637][874]LogModuleManager: Shutting down and abandoning module SessionFrontend (155)
+[2016.04.11-12.20.31:637][874]LogModuleManager: Shutting down and abandoning module ProfilerClient (154)
+[2016.04.11-12.20.31:637][874]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (153)
+[2016.04.11-12.20.31:637][874]LogModuleManager: Shutting down and abandoning module DeviceManager (152)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module AutomationController (151)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module AutomationWindow (150)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module Layers (149)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (148)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module DetailCustomizations (147)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module PackagesDialog (146)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module Persona (145)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module Kismet (144)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module GraphEditor (143)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module ClassViewer (142)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module Toolbox (141)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module ModuleUI (140)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module MovieSceneTools (139)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module OutputLog (138)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module GammaUI (137)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module Documentation (136)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (135)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module AnalyticsET (134)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module Analytics (133)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module PortalServices (132)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module PortalRpc (131)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module MessagingRpc (130)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module AITestSuite (129)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module GameplayDebugger (128)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module AIModule (127)
+[2016.04.11-12.20.31:667][874]LogModuleManager: Shutting down and abandoning module ProfilerService (126)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module TaskGraph (125)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module SlateRemote (124)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module SteamVRController (123)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module SteamVR (122)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (121)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module OculusLibrary (120)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module OculusInput (119)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (118)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module CableComponent (117)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (116)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (115)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module HTML5Networking (114)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (113)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module PluginBrowser (112)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module EpicSurvey (111)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.04.11-12.20.31:883][874]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.04.11-12.20.31:884][874]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.04.11-12.20.31:884][874]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.04.11-12.20.31:884][874]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
+[2016.04.11-12.20.31:885][874]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
+[2016.04.11-12.20.32:050][874]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
+[2016.04.11-12.20.32:051][874]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
+[2016.04.11-12.20.32:051][874]LogModuleManager: Shutting down and abandoning module PuzzleHorror (93)
+[2016.04.11-12.20.32:051][874]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (86)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (85)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (84)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (78)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module MessageLog (77)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module Sequencer (76)
+[2016.04.11-12.20.32:151][874]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.04.11-12.20.32:152][874]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.04.11-12.20.32:152][874]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.04.11-12.20.32:152][874]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.04.11-12.20.32:152][874]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.04.11-12.20.32:152][874]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module SessionServices (69)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (68)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (67)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module XAudio2 (66)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module Networking (64)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module Core (63)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module KismetCompiler (62)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module PhysXFormats (61)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module MeshUtilities (60)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module CookingStats (59)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.04.11-12.20.32:154][874]LogDerivedDataCache: Shutdown
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (57)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (56)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (55)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (54)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (53)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (52)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (51)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module ImageWrapper (50)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (49)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (48)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (47)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (46)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (45)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (44)
+[2016.04.11-12.20.32:154][874]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (43)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (42)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (41)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Messaging (40)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (39)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (38)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (37)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (36)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (35)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (34)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (33)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (32)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (31)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (30)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (29)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (28)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (27)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (26)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (25)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module TargetPlatform (24)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module InputCore (23)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module Settings (22)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (20)
+[2016.04.11-12.20.32:155][874]LogModuleManager: Shutting down and abandoning module HTTP (19)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module XMPP (18)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module OculusRift (17)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (16)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module DesktopPlatform (15)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.04.11-12.20.34:156][874]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.04.11-12.20.34:157][874]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.04.11-12.20.34:159][874]LogExit: Exiting.
+[2016.04.11-12.20.34:175][874]Log file closed, 04/11/16 14:20:34
