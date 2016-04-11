@@ -1,8 +1,8 @@
 {
 	"Changelist" : 2934540,
-	"BuildId" : "48b18420-ef44-4efa-a616-516df8d8495d",
+	"BuildId" : "",
 	"Modules" : 
 	{
-		"FPSProject" : "UE4Editor-FPSProject-9918.dll"
+		"FPSProject" : "UE4Editor-FPSProject.dll"
 	}
 }
