@@ -9,17 +9,67 @@
 #include "PuzzleHorror.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePuzzleHorror() {}
+	void UActionController::StaticRegisterNativesUActionController()
+	{
+	}
+	IMPLEMENT_CLASS(UActionController, 3687775320);
 	void APuzzleHorrorGameMode::StaticRegisterNativesAPuzzleHorrorGameMode()
 	{
 	}
 	IMPLEMENT_CLASS(APuzzleHorrorGameMode, 3262645439);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
+	PUZZLEHORROR_API class UClass* Z_Construct_UClass_UActionController_NoRegister();
+	PUZZLEHORROR_API class UClass* Z_Construct_UClass_UActionController();
 	PUZZLEHORROR_API class UClass* Z_Construct_UClass_APuzzleHorrorGameMode_NoRegister();
 	PUZZLEHORROR_API class UClass* Z_Construct_UClass_APuzzleHorrorGameMode();
 	PUZZLEHORROR_API class UPackage* Z_Construct_UPackage__Script_PuzzleHorror();
+	UClass* Z_Construct_UClass_UActionController_NoRegister()
+	{
+		return UActionController::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UActionController()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_PuzzleHorror();
+			OuterClass = UActionController::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_ThrowForce = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ThrowForce"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ThrowForce, UActionController), 0x0040000000000001);
+				UProperty* NewProp_RayReach = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RayReach"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(RayReach, UActionController), 0x0040000000000001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("ComponentReplication"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ActionController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("ActionController.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_ThrowForce, TEXT("Category"), TEXT("ActionController"));
+				MetaData->SetValue(NewProp_ThrowForce, TEXT("ModuleRelativePath"), TEXT("ActionController.h"));
+				MetaData->SetValue(NewProp_RayReach, TEXT("Category"), TEXT("ActionController"));
+				MetaData->SetValue(NewProp_RayReach, TEXT("ModuleRelativePath"), TEXT("ActionController.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UActionController(Z_Construct_UClass_UActionController, &UActionController::StaticClass, TEXT("UActionController"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UActionController);
 	UClass* Z_Construct_UClass_APuzzleHorrorGameMode_NoRegister()
 	{
 		return APuzzleHorrorGameMode::StaticClass();
@@ -62,8 +112,8 @@ void EmptyLinkFunctionForGeneratedCodePuzzleHorror() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/PuzzleHorror")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x582BA0FB;
-			Guid.B = 0x9CD5AC54;
+			Guid.A = 0xB5124484;
+			Guid.B = 0x3B7D76B1;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef PUZZLEHORROR_ActionController_generated_h
+	#include "ActionController.h"
+#endif
 #ifndef PUZZLEHORROR_PuzzleHorrorGameMode_generated_h
 	#include "PuzzleHorrorGameMode.h"
 #endif

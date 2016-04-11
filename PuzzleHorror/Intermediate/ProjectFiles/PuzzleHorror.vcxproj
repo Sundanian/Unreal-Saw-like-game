@@ -413,6 +413,8 @@
 		<None Include="..\..\Config\DefaultEditor.ini" />
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
+		<ClCompile Include="..\..\Source\PuzzleHorror\ActionController.cpp" />
+		<ClInclude Include="..\..\Source\PuzzleHorror\ActionController.h" />
 		<None Include="..\..\Source\PuzzleHorror\PuzzleHorror.Build.cs" />
 		<ClCompile Include="..\..\Source\PuzzleHorror\PuzzleHorror.cpp" />
 		<ClInclude Include="..\..\Source\PuzzleHorror\PuzzleHorror.h" />
