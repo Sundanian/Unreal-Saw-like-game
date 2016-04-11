@@ -284,4 +284,43 @@ LogInit: Object subsystem initialized
 [2016.04.11-11.44.29:422][  0]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 1981 classes and 347 folders.
 [2016.04.11-11.44.29:427][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
 [2016.04.11-11.44.29:427][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.04.11-11.44.29:428][  0]LogContentBrowser: Native class hierarchy u
+[2016.04.11-11.44.29:428][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0013 seconds. Added 12 classes and 0 folders.
+[2016.04.11-11.44.29:436][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2016.04.11-11.44.29:457][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0020 seconds. Added 1 classes and 2 folders.
+[2016.04.11-11.44.29:526][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2016.04.11-11.44.29:552][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.04.11-11.44.29:556][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.04.11-11.44.29:601][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
+[2016.04.11-11.44.29:601][  0]LogLoad: Full Startup: 44.76 seconds (BP compile: 0.03 seconds)
+[2016.04.11-11.44.29:601][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.04.11-11.44.29:601][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.04.11-11.44.29:619][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.04.11-11.44.29:675][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.04.11-11.44.29:836][  0]LogRenderer: Reallocating scene render targets to support 876x576 (Frame:2).
+[2016.04.11-11.44.29:901][  1]LogFileCache: Retrieving MD5 hashes for directory 'D:/Programmer/Epic Games/PuzzelPuzzel/PuzzleHorror/Content/' took 0.27s
+[2016.04.11-11.44.29:908][  1]LogAssetRegistry: Asset discovery search completed in 3.3828 seconds
+[2016.04.11-11.44.29:908][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.04.11-11.44.29:908][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000017 seconds (updated 0 objects)
+[2016.04.11-11.45.29:889][832]AssetReimport: New page: Outstanding source content changes 2:45:29 PM
+[2016.04.11-11.48.26:951][544]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:\Programmer\Epic Games\PuzzelPuzzel\PuzzleHorror\Content\Maps\door1.fbx)
+[2016.04.11-11.48.26:993][544]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.04.11-11.48.26:993][544]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.04.11-11.48.26:993][544]LogFbx: ItemName: Model, ItemCount : 1
+[2016.04.11-11.48.26:993][544]LogFbx: ItemName: Material, ItemCount : 4
+[2016.04.11-11.48.26:993][544]LogFbx: ItemName: Texture, ItemCount : 1
+[2016.04.11-11.48.26:993][544]LogFbx: ItemName: Video, ItemCount : 1
+[2016.04.11-11.48.27:013][544]LogFbx: Loading FBX Scene from D:\Programmer\Epic Games\PuzzelPuzzel\PuzzleHorror\Content\Maps\door1.fbx
+[2016.04.11-11.48.27:031][544]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.11-11.48.29:338][544]LogFbx: Loading FBX Scene from D:\Programmer\Epic Games\PuzzelPuzzel\PuzzleHorror\Content\Maps\door1.fbx
+[2016.04.11-11.48.29:345][544]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.11-11.48.29:348][544]LogLinker:Warning: Can't find file '/Game/Probs/doorWood'
+[2016.04.11-11.48.29:348][544]LogLinker:Warning: Can't find file '/Game/Probs/doorWood'
+[2016.04.11-11.48.29:352][544]LogUObjectGlobals:Warning: Failed to find object 'Texture /Game/Probs/doorWood.doorWood'
+[2016.04.11-11.48.29:415][544]LogTexture:Display: Building textures: doorWood2 (AutoDXT)
+[2016.04.11-11.48.29:959][544]LogMaterial: Missing cached shader map for material doorWood, compiling. 
+[2016.04.11-11.48.29:983][544]LogLinker:Warning: Can't find file '/Game/Probs/Hinges'
+[2016.04.11-11.48.29:983][544]LogLinker:Warning: Can't find file '/Game/Probs/Hinges'
+[2016.04.11-11.48.29:987][544]LogMaterial: Missing cached shader map for material Hinges, compiling. 
+[2016.04.11-11.48.29:995][544]LogLinker:Warning: Can't find file '/Game/Probs/Outlines'
+[2016.04.11-11.48.29:995][544]LogLinker:Warning: Can't find file '/Game/Probs/Outlines'
+[2016.04.11-11.48.29:999][544]LogMaterial: Missing cache
