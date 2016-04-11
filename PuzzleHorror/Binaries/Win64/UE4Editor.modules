@@ -1,8 +1,8 @@
 {
-	"Changelist" : 2934540,
-	"BuildId" : "10f69572-2cbb-4f25-b4ab-bc01c678b0df",
+	"Changelist" : 2927265,
+	"BuildId" : "",
 	"Modules" : 
 	{
-		"PuzzleHorror" : "UE4Editor-PuzzleHorror-8289.dll"
+		"PuzzleHorror" : "UE4Editor-PuzzleHorror.dll"
 	}
 }
