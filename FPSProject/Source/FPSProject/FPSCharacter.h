@@ -59,4 +59,14 @@ public:
 	/** Projectile class to spawn */
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class AFPSProjectile> ProjectileClass;
+
+	//handles picking up items
+	UFUNCTION()
+		void OnPickUp();
+
+	//handles flashlight
+	UFUNCTION()
+		void FlashLight();
+
+
 };

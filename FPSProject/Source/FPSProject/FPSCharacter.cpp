@@ -49,6 +49,10 @@ void AFPSCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompon
 
 	//Shoot
 	InputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::OnFire);
+
+	InputComponent->BindAction("PickUp", IE_Pressed, this, &AFPSCharacter::OnPickUp);
+	InputComponent->BindAction("FlashLight", IE_Pressed, this, &AFPSCharacter::FlashLight);
+
 }
 
 void AFPSCharacter::MoveForward(float Value)
@@ -141,4 +145,12 @@ void AFPSCharacter::OnFire()
 			}
 		}
 	}
+}
+
+void AFPSCharacter::OnPickUp()
+{
+}
+
+void AFPSCharacter::FlashLight()
+{
 }
