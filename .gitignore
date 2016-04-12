@@ -58,3 +58,5 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+FPSProject/Intermediate/
+FPSProject/Saved/
