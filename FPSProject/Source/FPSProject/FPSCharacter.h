@@ -80,8 +80,8 @@ private:
 	UPhysicsHandleComponent *PhysicsComponent = nullptr;
 
 	UPROPERTY(EditAnywhere)
-		float RayReach = 200.0f;
+		float RayReach = 300.0f;
 
 	UPROPERTY(EditAnywhere)
-		float ThrowForce = 100000.0f;
+		float ThrowForce = 150000.0f;
 };
