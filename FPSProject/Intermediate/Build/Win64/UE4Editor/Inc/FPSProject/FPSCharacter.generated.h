@@ -15,6 +15,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FPSProject_Source_FPSProject_FPSCharacter_h_11_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execFlashLight) \
+	{ \
+		P_FINISH; \
+		this->FlashLight(); \
+	} \
+ \
+	DECLARE_FUNCTION(execOnPickUp) \
+	{ \
+		P_FINISH; \
+		this->OnPickUp(); \
+	} \
+ \
 	DECLARE_FUNCTION(execOnFire) \
 	{ \
 		P_FINISH; \
@@ -49,6 +61,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define FPSProject_Source_FPSProject_FPSCharacter_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFlashLight) \
+	{ \
+		P_FINISH; \
+		this->FlashLight(); \
+	} \
+ \
+	DECLARE_FUNCTION(execOnPickUp) \
+	{ \
+		P_FINISH; \
+		this->OnPickUp(); \
+	} \
  \
 	DECLARE_FUNCTION(execOnFire) \
 	{ \

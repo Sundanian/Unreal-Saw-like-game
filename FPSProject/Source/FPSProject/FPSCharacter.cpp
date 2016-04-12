@@ -17,12 +17,14 @@ AFPSCharacter::AFPSCharacter()
 void AFPSCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-
-	if (GEngine)
+	//UE_LOG(LogTemp, Warning, TEXT("BeginPlay"));
+	PhysicsComponent = this->FindComponentByClass<UPhysicsHandleComponent>();
+	//UE_LOG(LogTemp, Warning, TEXT("PhysicsComponent"));
+	if (!PhysicsComponent)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("We are using FPSCharacter!"));
-	}
-	
+		UE_LOG(LogTemp, Error, TEXT("No UPhysicsHandleComponent found"));
+		return;
+	}	
 }
 
 // Called every frame
@@ -30,6 +32,10 @@ void AFPSCharacter::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
 
+	if (!PhysicsComponent) return;
+
+	if (PhysicsComponent->GrabbedComponent)
+		PhysicsComponent->SetTargetLocation(GetLineTraceEnd());
 }
 
 // Called to bind functionality to input
@@ -49,6 +55,10 @@ void AFPSCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompon
 
 	//Shoot
 	InputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::OnFire);
+
+	InputComponent->BindAction("PickUp", IE_Pressed, this, &AFPSCharacter::OnPickUp);
+	InputComponent->BindAction("FlashLight", IE_Pressed, this, &AFPSCharacter::FlashLight);
+
 }
 
 void AFPSCharacter::MoveForward(float Value)
@@ -110,6 +120,8 @@ AFPSCharacter::AFPSCharacter(const FObjectInitializer& ObjectInitializer)
 
 	// everyone but the owner can see the regular body mesh
 	GetMesh()->SetOwnerNoSee(true);
+
+	PhysicsComponent = ObjectInitializer.CreateDefaultSubobject<UPhysicsHandleComponent>(this, TEXT("PhysicsHC"));
 }
 
 void AFPSCharacter::OnFire()
@@ -141,4 +153,58 @@ void AFPSCharacter::OnFire()
 			}
 		}
 	}
+}
+
+void AFPSCharacter::OnPickUp()
+{
+	//UE_LOG(LogTemp, Warning, TEXT("OnPickUp"));
+	if (!PhysicsComponent) return;
+	//UE_LOG(LogTemp, Warning, TEXT("PhysicsComponent exist"));
+
+	if (PhysicsComponent->GrabbedComponent) {
+		PhysicsComponent->ReleaseComponent();
+		//UE_LOG(LogTemp, Warning, TEXT("Release Component"));
+		return;
+	}
+
+	FHitResult HitResult = GetLineTraceFirstPhysicsActors();
+
+
+	if (HitResult.GetActor())
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("%s it hit"), *HitResult.GetActor()->GetName());
+		PhysicsComponent->GrabComponent(HitResult.GetComponent(), NAME_None, HitResult.GetActor()->GetActorLocation(), true);
+		//UE_LOG(LogTemp, Warning, TEXT("PickedUp"));
+	}
+}
+
+FVector AFPSCharacter::GetLineTraceStart() {
+	APlayerController *PlayerController = GetWorld()->GetFirstPlayerController();
+	FVector PlayerPosition;
+	FRotator PlayerRotation;
+	PlayerController->GetPlayerViewPoint(PlayerPosition, PlayerRotation);
+
+	return PlayerPosition;
+}
+
+FVector AFPSCharacter::GetLineTraceEnd() {
+	APlayerController *PlayerController = GetWorld()->GetFirstPlayerController();
+	FVector PlayerPosition;
+	FRotator PlayerRotation;
+	PlayerController->GetPlayerViewPoint(PlayerPosition, PlayerRotation);
+
+	return PlayerPosition + PlayerRotation.Vector() * RayReach;
+}
+
+FHitResult AFPSCharacter::GetLineTraceFirstPhysicsActors() {
+	FHitResult HitResult;
+	GetWorld()->LineTraceSingleByObjectType(HitResult, GetLineTraceStart(), GetLineTraceEnd(),
+		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
+		FCollisionQueryParams("ActionTrance", false, GetOwner()));
+
+	return HitResult;
+}
+
+void AFPSCharacter::FlashLight()
+{
 }

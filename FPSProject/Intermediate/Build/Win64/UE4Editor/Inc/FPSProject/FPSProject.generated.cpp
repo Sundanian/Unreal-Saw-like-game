@@ -11,13 +11,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "FlashLight",(Native)&AFPSCharacter::execFlashLight);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "MoveForward",(Native)&AFPSCharacter::execMoveForward);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "MoveRight",(Native)&AFPSCharacter::execMoveRight);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnFire",(Native)&AFPSCharacter::execOnFire);
+		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnPickUp",(Native)&AFPSCharacter::execOnPickUp);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnStartJump",(Native)&AFPSCharacter::execOnStartJump);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnStopJump",(Native)&AFPSCharacter::execOnStopJump);
 	}
-	IMPLEMENT_CLASS(AFPSCharacter, 2462175114);
+	IMPLEMENT_CLASS(AFPSCharacter, 3317125872);
 	void AFPSGameMode::StaticRegisterNativesAFPSGameMode()
 	{
 	}
@@ -54,9 +56,11 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 
+	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_FlashLight();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnFire();
+	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnPickUp();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnStartJump();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnStopJump();
 	FPSPROJECT_API class UClass* Z_Construct_UClass_AFPSCharacter_NoRegister();
@@ -73,6 +77,23 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	FPSPROJECT_API class UClass* Z_Construct_UClass_AMyGameMode_NoRegister();
 	FPSPROJECT_API class UClass* Z_Construct_UClass_AMyGameMode();
 	FPSPROJECT_API class UPackage* Z_Construct_UPackage__Script_FPSProject();
+	UFunction* Z_Construct_UFunction_AFPSCharacter_FlashLight()
+	{
+		UObject* Outer=Z_Construct_UClass_AFPSCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FlashLight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("FPSCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("handles flashlight"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward()
 	{
 		struct FPSCharacter_eventMoveForward_Parms
@@ -134,6 +155,23 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_OnPickUp()
+	{
+		UObject* Outer=Z_Construct_UClass_AFPSCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnPickUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("FPSCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("handles picking up items"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AFPSCharacter_OnStartJump()
 	{
 		UObject* Outer=Z_Construct_UClass_AFPSCharacter();
@@ -185,21 +223,26 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_FlashLight());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_MoveForward());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_MoveRight());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnFire());
+				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnPickUp());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnStartJump());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnStopJump());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_RayReach = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RayReach"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(RayReach, AFPSCharacter), 0x0040000000000001);
 				UProperty* NewProp_ProjectileClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ProjectileClass"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(ProjectileClass, AFPSCharacter), 0x0014000000010001, Z_Construct_UClass_AFPSProjectile_NoRegister(), UClass::StaticClass());
 				UProperty* NewProp_MuzzleOffset = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MuzzleOffset"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MuzzleOffset, AFPSCharacter), 0x0010000000000005, Z_Construct_UScriptStruct_FVector());
 				UProperty* NewProp_FirstPersonMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonMesh, AFPSCharacter), 0x00100000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
 				UProperty* NewProp_FirstPersonCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonCameraComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonCameraComponent, AFPSCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_FlashLight(), "FlashLight"); // 2177353292
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_MoveForward(), "MoveForward"); // 2513472235
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_MoveRight(), "MoveRight"); // 2493399781
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnFire(), "OnFire"); // 4141101635
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnPickUp(), "OnPickUp"); // 857882968
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnStartJump(), "OnStartJump"); // 4217396172
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnStopJump(), "OnStopJump"); // 3233714119
 				OuterClass->StaticLink();
@@ -208,6 +251,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("FPSCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("FPSCharacter.h"));
+				MetaData->SetValue(NewProp_RayReach, TEXT("Category"), TEXT("FPSCharacter"));
+				MetaData->SetValue(NewProp_RayReach, TEXT("ModuleRelativePath"), TEXT("FPSCharacter.h"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("Category"), TEXT("Projectile"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("ModuleRelativePath"), TEXT("FPSCharacter.h"));
 				MetaData->SetValue(NewProp_ProjectileClass, TEXT("ToolTip"), TEXT("Projectile class to spawn"));
@@ -448,8 +493,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/FPSProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xC4C261BD;
-			Guid.B = 0x3C84C2F1;
+			Guid.A = 0x7F93BC6D;
+			Guid.B = 0xE8963197;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
