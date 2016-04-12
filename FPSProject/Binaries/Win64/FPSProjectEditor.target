@@ -2,7 +2,7 @@
 	"TargetName" : "FPSProjectEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "27326b96-a022-475e-a8e7-47891eae2be3",
+	"BuildId" : "556799c2-61c9-43d2-874b-f5b76608cd73",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -15,15 +15,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-FPSProject-2940.dll",
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-FPSProject-7067.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-FPSProject-2940.pdb",
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-FPSProject-7067.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)\\Intermediate\\Build\\Win64\\UE4Editor\\Development\\UE4Editor-FPSProject-2940.lib",
+			"Path" : "$(ProjectDir)\\Intermediate\\Build\\Win64\\UE4Editor\\Development\\UE4Editor-FPSProject-7067.lib",
 			"Type" : "ImportLibrary"
 		}
 	],
