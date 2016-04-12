@@ -8,7 +8,7 @@
 // Sets default values
 AFPSCharacter::AFPSCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
@@ -24,13 +24,13 @@ void AFPSCharacter::BeginPlay()
 	{
 		UE_LOG(LogTemp, Error, TEXT("No UPhysicsHandleComponent found"));
 		return;
-	}	
+	}
 }
 
 // Called every frame
-void AFPSCharacter::Tick( float DeltaTime )
+void AFPSCharacter::Tick(float DeltaTime)
 {
-	Super::Tick( DeltaTime );
+	Super::Tick(DeltaTime);
 
 	if (!PhysicsComponent) return;
 
@@ -126,33 +126,51 @@ AFPSCharacter::AFPSCharacter(const FObjectInitializer& ObjectInitializer)
 
 void AFPSCharacter::OnFire()
 {
-	// try and fire a projectile
-	if (ProjectileClass != NULL)
+	if (!PhysicsComponent) return;
+
+	if (PhysicsComponent->GrabbedComponent) {
+		PhysicsComponent->GrabbedComponent->AddImpulse(GetImpulse());
+		PhysicsComponent->ReleaseComponent();
+	}
+	else
 	{
-		// Get the camera transform
-		FVector CameraLoc;
-		FRotator CameraRot;
-		GetActorEyesViewPoint(CameraLoc, CameraRot);
-		// MuzzleOffset is in camera space, so transform it to world space before offsetting from the camera to find the final muzzle position
-		FVector const MuzzleLocation = CameraLoc + FTransform(CameraRot).TransformVector(MuzzleOffset);
-		FRotator MuzzleRotation = CameraRot;
-		MuzzleRotation.Pitch += 10.0f;          // skew the aim upwards a bit
-		UWorld* const World = GetWorld();
-		if (World)
+		// try and fire a projectile
+		if (ProjectileClass != NULL)
 		{
-			FActorSpawnParameters SpawnParams;
-			SpawnParams.Owner = this;
-			SpawnParams.Instigator = Instigator;
-			// spawn the projectile at the muzzle
-			AFPSProjectile* const Projectile = World->SpawnActor<AFPSProjectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
-			if (Projectile)
+			// Get the camera transform
+			FVector CameraLoc;
+			FRotator CameraRot;
+			GetActorEyesViewPoint(CameraLoc, CameraRot);
+			// MuzzleOffset is in camera space, so transform it to world space before offsetting from the camera to find the final muzzle position
+			FVector const MuzzleLocation = CameraLoc + FTransform(CameraRot).TransformVector(MuzzleOffset);
+			FRotator MuzzleRotation = CameraRot;
+			MuzzleRotation.Pitch += 10.0f;          // skew the aim upwards a bit
+			UWorld* const World = GetWorld();
+			if (World)
 			{
-				// find launch direction
-				FVector const LaunchDir = MuzzleRotation.Vector();
-				Projectile->InitVelocity(LaunchDir);
+				FActorSpawnParameters SpawnParams;
+				SpawnParams.Owner = this;
+				SpawnParams.Instigator = Instigator;
+				// spawn the projectile at the muzzle
+				AFPSProjectile* const Projectile = World->SpawnActor<AFPSProjectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+				if (Projectile)
+				{
+					// find launch direction
+					FVector const LaunchDir = MuzzleRotation.Vector();
+					Projectile->InitVelocity(LaunchDir);
+				}
 			}
 		}
 	}
+}
+
+FVector AFPSCharacter::GetImpulse() {
+	APlayerController *PlayerController = GetWorld()->GetFirstPlayerController();
+	FVector PlayerPosition;
+	FRotator PlayerRotation;
+	PlayerController->GetPlayerViewPoint(PlayerPosition, PlayerRotation);
+
+	return PlayerRotation.Vector() * ThrowForce;
 }
 
 void AFPSCharacter::OnPickUp()
