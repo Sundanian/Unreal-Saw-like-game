@@ -64,9 +64,19 @@ public:
 	UFUNCTION()
 		void OnPickUp();
 
+	FVector GetLineTraceStart();
+
+	FVector GetLineTraceEnd();
+
+	FHitResult GetLineTraceFirstPhysicsActors();
+
 	//handles flashlight
 	UFUNCTION()
 		void FlashLight();
 
+private:
+	UPhysicsHandleComponent *PhysicsComponent = nullptr;
 
+	UPROPERTY(EditAnywhere)
+		float RayReach = 200.0f;
 };
