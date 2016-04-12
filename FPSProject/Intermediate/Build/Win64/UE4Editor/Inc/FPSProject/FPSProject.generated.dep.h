@@ -23,3 +23,6 @@
 #ifndef FPSPROJECT_MyGameMode_generated_h
 	#include "MyGameMode.h"
 #endif
+#ifndef FPSPROJECT_TriggerHandler_generated_h
+	#include "TriggerHandler.h"
+#endif
