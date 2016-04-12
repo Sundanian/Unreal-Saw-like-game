@@ -11,13 +11,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "FlashLight",(Native)&AFPSCharacter::execFlashLight);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "MoveForward",(Native)&AFPSCharacter::execMoveForward);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "MoveRight",(Native)&AFPSCharacter::execMoveRight);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnFire",(Native)&AFPSCharacter::execOnFire);
+		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnPickUp",(Native)&AFPSCharacter::execOnPickUp);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnStartJump",(Native)&AFPSCharacter::execOnStartJump);
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "OnStopJump",(Native)&AFPSCharacter::execOnStopJump);
 	}
-	IMPLEMENT_CLASS(AFPSCharacter, 2462175114);
+	IMPLEMENT_CLASS(AFPSCharacter, 3376690846);
 	void AFPSGameMode::StaticRegisterNativesAFPSGameMode()
 	{
 	}
@@ -39,6 +41,11 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	{
 	}
 	IMPLEMENT_CLASS(AMyGameMode, 63871443);
+	void UTriggerHandler::StaticRegisterNativesUTriggerHandler()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(UTriggerHandler::StaticClass(), "OnBeginOverlap",(Native)&UTriggerHandler::execOnBeginOverlap);
+	}
+	IMPLEMENT_CLASS(UTriggerHandler, 1455377699);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
@@ -53,10 +60,14 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_ATriggerVolume_NoRegister();
 
+	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_FlashLight();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnFire();
+	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnPickUp();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnStartJump();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_OnStopJump();
 	FPSPROJECT_API class UClass* Z_Construct_UClass_AFPSCharacter_NoRegister();
@@ -72,7 +83,28 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	FPSPROJECT_API class UClass* Z_Construct_UClass_AFPSProjectile();
 	FPSPROJECT_API class UClass* Z_Construct_UClass_AMyGameMode_NoRegister();
 	FPSPROJECT_API class UClass* Z_Construct_UClass_AMyGameMode();
+	FPSPROJECT_API class UFunction* Z_Construct_UDelegateFunction_FPSProject_TriggerDelegate__DelegateSignature();
+	FPSPROJECT_API class UFunction* Z_Construct_UFunction_UTriggerHandler_OnBeginOverlap();
+	FPSPROJECT_API class UClass* Z_Construct_UClass_UTriggerHandler_NoRegister();
+	FPSPROJECT_API class UClass* Z_Construct_UClass_UTriggerHandler();
 	FPSPROJECT_API class UPackage* Z_Construct_UPackage__Script_FPSProject();
+	UFunction* Z_Construct_UFunction_AFPSCharacter_FlashLight()
+	{
+		UObject* Outer=Z_Construct_UClass_AFPSCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FlashLight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("FPSCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("handles flashlight"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward()
 	{
 		struct FPSCharacter_eventMoveForward_Parms
@@ -134,6 +166,23 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_OnPickUp()
+	{
+		UObject* Outer=Z_Construct_UClass_AFPSCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnPickUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("FPSCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("handles picking up items"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AFPSCharacter_OnStartJump()
 	{
 		UObject* Outer=Z_Construct_UClass_AFPSCharacter();
@@ -185,9 +234,11 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_FlashLight());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_MoveForward());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_MoveRight());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnFire());
+				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnPickUp());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnStartJump());
 				OuterClass->LinkChild(Z_Construct_UFunction_AFPSCharacter_OnStopJump());
 
@@ -197,9 +248,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FirstPersonMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonMesh, AFPSCharacter), 0x00100000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
 				UProperty* NewProp_FirstPersonCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FirstPersonCameraComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonCameraComponent, AFPSCharacter), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_FlashLight(), "FlashLight"); // 2177353292
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_MoveForward(), "MoveForward"); // 2513472235
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_MoveRight(), "MoveRight"); // 2493399781
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnFire(), "OnFire"); // 4141101635
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnPickUp(), "OnPickUp"); // 857882968
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnStartJump(), "OnStartJump"); // 4217396172
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFPSCharacter_OnStopJump(), "OnStopJump"); // 3233714119
 				OuterClass->StaticLink();
@@ -440,6 +493,90 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMyGameMode(Z_Construct_UClass_AMyGameMode, &AMyGameMode::StaticClass, TEXT("AMyGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMyGameMode);
+	UFunction* Z_Construct_UDelegateFunction_FPSProject_TriggerDelegate__DelegateSignature()
+	{
+		UObject* Outer=Z_Construct_UPackage__Script_FPSProject();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TriggerDelegate__DelegateSignature"), RF_Public|RF_Transient|RF_MarkAsNative) UDelegateFunction(FObjectInitializer(), NULL, 0x00130000, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("TriggerHandler.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UTriggerHandler_OnBeginOverlap()
+	{
+		struct TriggerHandler_eventOnBeginOverlap_Parms
+		{
+			AActor* OtherActor;
+		};
+		UObject* Outer=Z_Construct_UClass_UTriggerHandler();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnBeginOverlap"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(TriggerHandler_eventOnBeginOverlap_Parms));
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, TriggerHandler_eventOnBeginOverlap_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("TriggerHandler.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Important to make the eventhandler into an UFUNCTION, otherwise UE4 will ignore the call"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UTriggerHandler_NoRegister()
+	{
+		return UTriggerHandler::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UTriggerHandler()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_FPSProject();
+			OuterClass = UTriggerHandler::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UTriggerHandler_OnBeginOverlap());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CloseDoor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CloseDoor"), RF_Public|RF_Transient|RF_MarkAsNative) UMulticastDelegateProperty(CPP_PROPERTY_BASE(CloseDoor, UTriggerHandler), 0x0040000010080000, Z_Construct_UDelegateFunction_FPSProject_TriggerDelegate__DelegateSignature());
+				UProperty* NewProp_OpenDoor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OpenDoor"), RF_Public|RF_Transient|RF_MarkAsNative) UMulticastDelegateProperty(CPP_PROPERTY_BASE(OpenDoor, UTriggerHandler), 0x0040000010080000, Z_Construct_UDelegateFunction_FPSProject_TriggerDelegate__DelegateSignature());
+				UProperty* NewProp_DoorTrigger = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DoorTrigger"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(DoorTrigger, UTriggerHandler), 0x0040000000000001, Z_Construct_UClass_ATriggerVolume_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTriggerHandler_OnBeginOverlap(), "OnBeginOverlap"); // 3625360564
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("ComponentReplication"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TriggerHandler.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("TriggerHandler.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_CloseDoor, TEXT("ModuleRelativePath"), TEXT("TriggerHandler.h"));
+				MetaData->SetValue(NewProp_OpenDoor, TEXT("ModuleRelativePath"), TEXT("TriggerHandler.h"));
+				MetaData->SetValue(NewProp_DoorTrigger, TEXT("Category"), TEXT("TriggerHandler"));
+				MetaData->SetValue(NewProp_DoorTrigger, TEXT("ModuleRelativePath"), TEXT("TriggerHandler.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UTriggerHandler(Z_Construct_UClass_UTriggerHandler, &UTriggerHandler::StaticClass, TEXT("UTriggerHandler"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UTriggerHandler);
 	UPackage* Z_Construct_UPackage__Script_FPSProject()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -448,12 +585,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/FPSProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xC4C261BD;
-			Guid.B = 0x3C84C2F1;
+			Guid.A = 0x5CADED93;
+			Guid.B = 0xCC8A4747;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
 
+			Z_Construct_UDelegateFunction_FPSProject_TriggerDelegate__DelegateSignature();
 		}
 		return ReturnPackage;
 	}

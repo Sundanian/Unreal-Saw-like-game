@@ -411,11 +411,13 @@
     <ClCompile Include="..\..\Source\FPSProject\FPSHUD.cpp" />
     <ClCompile Include="..\..\Source\FPSProject\FPSProjectile.cpp" />
     <ClCompile Include="..\..\Source\FPSProject\MyGameMode.cpp" />
+    <ClCompile Include="..\..\Source\FPSProject\TriggerHandler.cpp" />
     <ClInclude Include="..\..\Source\FPSProject\FPSCharacter.h" />
     <ClInclude Include="..\..\Source\FPSProject\FPSGameMode.h" />
     <ClInclude Include="..\..\Source\FPSProject\FPSHUD.h" />
     <ClInclude Include="..\..\Source\FPSProject\FPSProjectile.h" />
     <ClInclude Include="..\..\Source\FPSProject\MyGameMode.h" />
+    <ClInclude Include="..\..\Source\FPSProject\TriggerHandler.h" />
     <None Include="..\..\FPSProject.uproject" />
     <None Include="..\..\Source\FPSProject.Target.cs" />
     <None Include="..\..\Source\FPSProjectEditor.Target.cs" />

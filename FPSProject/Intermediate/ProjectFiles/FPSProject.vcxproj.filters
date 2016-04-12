@@ -58,6 +58,9 @@
     <ClInclude Include="..\..\Source\FPSProject\FPSHUD.h">
       <Filter>Source\FPSProject</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\FPSProject\TriggerHandler.h">
+      <Filter>Source\FPSProject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\FPSProject\MyGameMode.cpp">
@@ -73,6 +76,9 @@
       <Filter>Source\FPSProject</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FPSProject\FPSHUD.cpp">
+      <Filter>Source\FPSProject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FPSProject\TriggerHandler.cpp">
       <Filter>Source\FPSProject</Filter>
     </ClCompile>
   </ItemGroup>
