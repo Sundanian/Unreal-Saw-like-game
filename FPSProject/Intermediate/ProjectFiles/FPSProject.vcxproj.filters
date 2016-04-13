@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\FPSProject.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{20C15B32-31FD-412D-BEDE-33A30772DD59}</UniqueIdentifier>
+			<UniqueIdentifier>{23160020-1BC8-4904-9F6D-3F9EC632430E}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FPSProject.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{1A616F31-E6E8-44D1-873E-0473631765AE}</UniqueIdentifier>
+			<UniqueIdentifier>{105B0943-0CBE-4BCA-9512-22D6907848C7}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\FPSProject">
-			<UniqueIdentifier>{C0F5AE81-A304-451D-8C86-F42EAB9E7261}</UniqueIdentifier>
+			<UniqueIdentifier>{CBA1FEC8-DF8D-4264-820B-F335748789E5}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\FPSProject\EnemyBehavior.cpp">
+			<Filter>Source\FPSProject</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FPSProject\EnemyBehavior.h">
+			<Filter>Source\FPSProject</Filter>
+		</ClInclude >
 		<ClCompile Include="..\..\Source\FPSProject\FPSCharacter.cpp">
 			<Filter>Source\FPSProject</Filter>
 		</ClCompile >
@@ -76,6 +82,12 @@
 			<Filter>Source\FPSProject</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\FPSProject\MyGameMode.h">
+			<Filter>Source\FPSProject</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FPSProject\TriggerHandler.cpp">
+			<Filter>Source\FPSProject</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FPSProject\TriggerHandler.h">
 			<Filter>Source\FPSProject</Filter>
 		</ClInclude >
 	</ItemGroup>

@@ -9,6 +9,10 @@
 #include "FPSProject.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
+	void UEnemyBehavior::StaticRegisterNativesUEnemyBehavior()
+	{
+	}
+	IMPLEMENT_CLASS(UEnemyBehavior, 1120839287);
 	void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AFPSCharacter::StaticClass(), "FlashLight",(Native)&AFPSCharacter::execFlashLight);
@@ -48,6 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	IMPLEMENT_CLASS(UTriggerHandler, 1455377699);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API class UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
@@ -60,9 +65,10 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_ATriggerVolume_NoRegister();
 
+	FPSPROJECT_API class UClass* Z_Construct_UClass_UEnemyBehavior_NoRegister();
+	FPSPROJECT_API class UClass* Z_Construct_UClass_UEnemyBehavior();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_FlashLight();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward();
 	FPSPROJECT_API class UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight();
@@ -88,6 +94,46 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject() {}
 	FPSPROJECT_API class UClass* Z_Construct_UClass_UTriggerHandler_NoRegister();
 	FPSPROJECT_API class UClass* Z_Construct_UClass_UTriggerHandler();
 	FPSPROJECT_API class UPackage* Z_Construct_UPackage__Script_FPSProject();
+	UClass* Z_Construct_UClass_UEnemyBehavior_NoRegister()
+	{
+		return UEnemyBehavior::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UEnemyBehavior()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_FPSProject();
+			OuterClass = UEnemyBehavior::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_speed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("speed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(speed, UEnemyBehavior), 0x0040000000000001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("ComponentReplication"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("EnemyBehavior.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("EnemyBehavior.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_speed, TEXT("Category"), TEXT("EnemyBehavior"));
+				MetaData->SetValue(NewProp_speed, TEXT("ModuleRelativePath"), TEXT("EnemyBehavior.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UEnemyBehavior(Z_Construct_UClass_UEnemyBehavior, &UEnemyBehavior::StaticClass, TEXT("UEnemyBehavior"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UEnemyBehavior);
 	UFunction* Z_Construct_UFunction_AFPSCharacter_FlashLight()
 	{
 		UObject* Outer=Z_Construct_UClass_AFPSCharacter();
@@ -591,8 +637,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/FPSProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x08B1FC0C;
-			Guid.B = 0xCC8A4747;
+			Guid.A = 0xFA1C5BCD;
+			Guid.B = 0x4287BF6B;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

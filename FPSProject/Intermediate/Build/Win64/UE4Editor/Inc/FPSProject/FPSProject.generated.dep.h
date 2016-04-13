@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef FPSPROJECT_EnemyBehavior_generated_h
+	#include "EnemyBehavior.h"
+#endif
 #ifndef FPSPROJECT_FPSCharacter_generated_h
 	#include "FPSCharacter.h"
 #endif
