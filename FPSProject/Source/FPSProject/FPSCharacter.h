@@ -52,6 +52,8 @@ public:
 	UFUNCTION()
 		void OnFire();
 
+	FVector GetImpulse();
+
 	/** Gun muzzle's offset from the camera location */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 		FVector MuzzleOffset;
@@ -78,5 +80,8 @@ private:
 	UPhysicsHandleComponent *PhysicsComponent = nullptr;
 
 	UPROPERTY(EditAnywhere)
-		float RayReach = 200.0f;
+		float RayReach = 300.0f;
+
+	UPROPERTY(EditAnywhere)
+		float ThrowForce = 150000.0f;
 };
