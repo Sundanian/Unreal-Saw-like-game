@@ -66,5 +66,6 @@ void AFPSProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, F
 	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
 		OtherComp->AddImpulseAtLocation(ProjectileMovement->Velocity * 100.0f, Hit.ImpactPoint);
+
 	}
 }

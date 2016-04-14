@@ -49,22 +49,23 @@ void UTriggerHandler::TickComponent( float DeltaTime, ELevelTick TickType, FActo
 	if (!DoorTrigger) return;
 
 	AActor * Player = GetWorld()->GetFirstPlayerController()->GetPawn();
-
 	float TotalMass = 0.0f;
 	TArray<AActor *> OverlappingActors;
 	DoorTrigger->GetOverlappingActors(OverlappingActors);
 	for (AActor *Actor : OverlappingActors)
 	{
-		TotalMass += Actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
-		TotalMass += 55;
+		if (OverlappingActors.Contains(Player))
+		{
+			TotalMass += 55;
+		}
+		//TotalMass += Actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
 	}
 
 	if (TotalMass > 50.0f) {
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("OPEN DOOR"));
 		OpenDoor.Broadcast();
-		UE_LOG(LogTemp, Warning, TEXT("Event triggered"));
-
-		GetOwner()->SetActorRotation(FRotator(0, 180, 0));
+		//UE_LOG(LogTemp, Warning, TEXT("Event triggered"));
+		GetOwner()->SetActorRotation(FRotator(0, 90, 0));
 	}
 	else {
 		CloseDoor.Broadcast();
