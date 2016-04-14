@@ -2,12 +2,13 @@
 
 #include "FPSProject.h"
 #include "FPSProjectile.h"
+#include "EnemyBehavior.h"
 
 
 // Sets default values
 AFPSProjectile::AFPSProjectile()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
@@ -16,13 +17,13 @@ AFPSProjectile::AFPSProjectile()
 void AFPSProjectile::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
-void AFPSProjectile::Tick( float DeltaTime )
+void AFPSProjectile::Tick(float DeltaTime)
 {
-	Super::Tick( DeltaTime );
+	Super::Tick(DeltaTime);
 
 }
 
@@ -66,5 +67,11 @@ void AFPSProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, F
 	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
 		OtherComp->AddImpulseAtLocation(ProjectileMovement->Velocity * 100.0f, Hit.ImpactPoint);
+		//UE_LOG(LogTemp, Warning, TEXT("Fireable"));
+		if (OtherActor->Tags.Contains(TEXT("Enemy")))
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("Enemy"));
+			OtherActor->Destroy();
+		}
 	}
 }
