@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\FPSProject.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{23160020-1BC8-4904-9F6D-3F9EC632430E}</UniqueIdentifier>
+			<UniqueIdentifier>{E37D1A4A-F548-42AE-B855-03B56829B42F}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FPSProject.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{105B0943-0CBE-4BCA-9512-22D6907848C7}</UniqueIdentifier>
+			<UniqueIdentifier>{CCD2E73B-6434-40AF-83AB-BDCABB69BC5C}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\FPSProject">
-			<UniqueIdentifier>{CBA1FEC8-DF8D-4264-820B-F335748789E5}</UniqueIdentifier>
+			<UniqueIdentifier>{D53E62B8-57B8-4CCD-A374-6BF0C6CE58A8}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\FPSProject\EnemyBehavior.cpp">
 			<Filter>Source\FPSProject</Filter>
