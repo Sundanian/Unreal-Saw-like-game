@@ -17,6 +17,7 @@ AFPSCharacter::AFPSCharacter()
 void AFPSCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	
 	//UE_LOG(LogTemp, Warning, TEXT("BeginPlay"));
 	PhysicsComponent = this->FindComponentByClass<UPhysicsHandleComponent>();
 	//UE_LOG(LogTemp, Warning, TEXT("PhysicsComponent"));
