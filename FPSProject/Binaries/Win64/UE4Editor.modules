@@ -1,8 +1,22 @@
 {
 	"Changelist" : 2934540,
+<<<<<<< HEAD
 	"BuildId" : "ee9cf730-3641-4c45-b4b8-8d2a4aa1caa7",
 	"Modules" : 
 	{
 		"FPSProject" : "UE4Editor-FPSProject-8274.dll"
+=======
+<<<<<<< HEAD
+	"BuildId" : "",
+	"Modules" : 
+	{
+		"FPSProject" : "UE4Editor-FPSProject.dll"
+=======
+	"BuildId" : "a9c84bff-fa31-4f88-bc25-8ece95dc1469",
+	"Modules" : 
+	{
+		"FPSProject" : "UE4Editor-FPSProject-6248.dll"
+>>>>>>> 7285129d0b4350690f5aefbe75a249bc96aa3249
+>>>>>>> 2cd21ba05b4288b20130e8b09f3cf4afbe3da499
 	}
 }
