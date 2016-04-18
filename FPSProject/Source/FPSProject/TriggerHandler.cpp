@@ -37,7 +37,7 @@ void UTriggerHandler::OnBeginOverlap(class AActor* OtherActor) {
 
 	//Should be calling GetTotalMassOnTriggerVolume()
 
-	GetTotalMassOnTriggerVolume();
+	//GetTotalMassOnTriggerVolume();
 }
 
 
@@ -56,6 +56,8 @@ void UTriggerHandler::TickComponent( float DeltaTime, ELevelTick TickType, FActo
 	{
 		if (OverlappingActors.Contains(Player))
 		{
+			//GetOwner()->SetActorRotation(FRotator(0, 90, 0));
+			//OpenDoor.Broadcast();
 			TotalMass += 55;
 		}
 		//TotalMass += Actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
@@ -68,6 +70,8 @@ void UTriggerHandler::TickComponent( float DeltaTime, ELevelTick TickType, FActo
 		GetOwner()->SetActorRotation(FRotator(0, 90, 0));
 	}
 	else {
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("ERROR"));
+		//OpenDoor.Broadcast();
 		CloseDoor.Broadcast();
 	}
 }
