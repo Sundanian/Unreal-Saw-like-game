@@ -19,18 +19,9 @@ void AKeyHole::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector
 
 	if (OtherActor->Tags.Contains(TEXT("Key")))
 	{
-				GLog->Log(TEXT("The Game Should End Now. TBI"));
+				//GLog->Log(TEXT("The Game Should End Now. TBI"));
+				UGameplayStatics::OpenLevel(GetWorld(), TEXT("Menu"));
 	}
-
-	//GLog->Log(*OtherActor->GetName());
-	//ConstructorHelpers::FObjectFinder<UBlueprint> BluePrintObj(TEXT("Blueprint'/Game/Blueprints/BP_Key.BP_Key'"));
-	//if (BluePrintObj.Succeeded())
-	//{
-	//	if (OtherActor->GetClass() == BluePrintObj.Object->GetClass())
-	//	{
-	//		GLog->Log(TEXT("Success"));
-	//	}
-	//}
 }
 
 // Called when the game starts or when spawned
