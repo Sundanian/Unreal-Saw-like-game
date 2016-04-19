@@ -71,7 +71,7 @@ void AFPSProjectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, F
 		if (OtherActor->Tags.Contains(TEXT("Enemy")))
 		{
 			//UE_LOG(LogTemp, Warning, TEXT("Enemy"));
-			OtherActor->Destroy();
+			OtherActor->FindComponentByClass<UEnemyBehavior>()->Restart();
 		}
 	}
 }

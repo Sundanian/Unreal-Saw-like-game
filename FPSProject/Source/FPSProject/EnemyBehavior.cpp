@@ -22,6 +22,7 @@ void UEnemyBehavior::BeginPlay()
 	Super::BeginPlay();
 
 	PlayerController = GetWorld()->GetFirstPlayerController();
+	InitialLocation = GetOwner()->GetActorLocation();
 
 	// ...
 
@@ -50,3 +51,7 @@ void UEnemyBehavior::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 	// ...
 }
 
+void UEnemyBehavior::Restart() {
+	//GLog->Log(TEXT("Restart"));
+	GetOwner()->SetActorLocation(InitialLocation);
+}
