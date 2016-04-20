@@ -33,7 +33,7 @@ void UTriggerHandler::BeginPlay()
 ///Method matching the signature of OnActorBeginOverlap
 void UTriggerHandler::OnBeginOverlap(class AActor* OtherActor) {
 
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Event Triggered"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Event Triggered"));
 
 	//Should be calling GetTotalMassOnTriggerVolume()
 
