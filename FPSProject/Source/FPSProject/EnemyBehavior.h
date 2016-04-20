@@ -26,6 +26,7 @@ public:
 	void Restart();
 
 private:
+	float Timeout = 0.0f;
 	FVector InitialLocation;
 	APlayerController *PlayerController;
 	FVector PlayerPosition;

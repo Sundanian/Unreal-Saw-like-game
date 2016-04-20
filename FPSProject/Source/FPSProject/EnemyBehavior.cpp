@@ -48,10 +48,20 @@ void UEnemyBehavior::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 	GoTowards(PlayerPosition, DeltaTime);
 
+	if (Timeout > 0.0f)
+	{
+		Timeout -= DeltaTime;
+	}
+	if (Timeout < 0.0f)
+	{
+		GetOwner()->SetActorLocation(InitialLocation);
+		Timeout = 0.0f;
+	}
+
 	// ...
 }
 
 void UEnemyBehavior::Restart() {
-	//GLog->Log(TEXT("Restart"));
-	GetOwner()->SetActorLocation(InitialLocation);
+	Timeout = 10.0f;
+	GetOwner()->SetActorLocation(InitialLocation + FVector(6000, 6000, 0));
 }
