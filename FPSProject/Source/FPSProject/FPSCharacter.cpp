@@ -130,7 +130,7 @@ void AFPSCharacter::OnFire()
 	if (!PhysicsComponent) return;
 
 	if (PhysicsComponent->GrabbedComponent) {
-		PhysicsComponent->GrabbedComponent->AddImpulse(GetImpulse());
+		//PhysicsComponent->GrabbedComponent->AddImpulse(GetImpulse());
 		PhysicsComponent->ReleaseComponent();
 	}
 	else
