@@ -29,7 +29,7 @@ void UEnemyBehavior::BeginPlay()
 }
 
 void UEnemyBehavior::GoTowards(FVector goal, float DeltaTime) {
-	//UE_LOG(LogTemp, Warning, TEXT("Player: %s"), *goal.ToString());
+	UE_LOG(LogTemp, Warning, TEXT("Player: %s"), *goal.ToString());
 	FVector currentPosition = GetOwner()->GetActorLocation();
 	//UE_LOG(LogTemp, Warning, TEXT("Enemy: %s"), *currentPosition.ToString());
 	FVector diff = goal - currentPosition;
@@ -63,5 +63,5 @@ void UEnemyBehavior::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 void UEnemyBehavior::Restart() {
 	Timeout = 10.0f;
-	GetOwner()->SetActorLocation(InitialLocation + FVector(6000, 6000, 0));
+	GetOwner()->SetActorLocation(InitialLocation + FVector(10000, 10000, 0));
 }
